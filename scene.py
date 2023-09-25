@@ -42,7 +42,7 @@ class AnimatedSquareToCircle(Scene):
         square = Square()  # create a square
 
         self.play(Create(square))  # show the square on screen
-        self.play(square.animate.shift(2, 2))  # what are the two shift parameters????
+        self.play(square.animate.shift(0, 2 * LEFT))  # what are the two shift parameters????
         self.play(
             ReplacementTransform(square, circle)
         )  # transform the square into a circle
